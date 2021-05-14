@@ -1,0 +1,39 @@
+{
+  "name": "simulators",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "azure-iot-device": "^1.9.9",
+    "azure-iot-device-amqp": "1.9.9",
+    "azure-iot-device-http": "1.9.9",
+    "azure-iot-device-mqtt": "1.9.9",
+    "azure-iot-provisioning-device": "1.5.9",
+    "azure-iot-provisioning-device-amqp": "1.5.9",
+    "azure-iot-provisioning-device-http": "1.5.9",
+    "azure-iot-provisioning-device-mqtt": "1.5.9",
+    "azure-iot-provisioning-service": "1.5.9",
+    "azure-iot-security-symmetric-key": "1.5.9",
+    "azure-iot-security-tpm": "1.5.9",
+    "azure-iot-security-x509": "1.5.9",
+    "child_process": "^1.0.2",
+    "crypto": "^1.0.1",
+    "line-reader": "^0.4.0",
+    "uuid": "^3.3.3",
+    "yargs": "^15.0.2",
+    "@azure/core-amqp": "latest",
+    "@azure/event-hubs": "latest",
+    "@types/dotenv": "^8.2.0",
+    "@types/ws": "^6.0.4",
+    "dotenv": "^8.2.0",
+    "https-proxy-agent": "^5.0.0",
+    "rhea-promise": "^1.0.0",
+    "tslib": "^1.9.3",
+    "ws": "^7.2.0"
+  }
+}

@@ -1,0 +1,34 @@
+{
+    "name": "Sptek simulator",
+    "dps": {
+        "idScope": "",
+        "provisionUrl": "global.azure-devices-provisioning.net",
+        "groupSymmKey": ""
+    },
+    "simulators": [
+        {
+            "name": "Temperature Sensor",
+            "count": 10,
+            "intervalSec": 60,
+            "prefix": "temperature-"
+        },
+        {
+            "name": "Particle Sensor",
+            "count": 10, 
+            "intervalSec": 60,
+            "prefix": "particle-"
+        },
+        {
+            "name": "Pressure Sensor",
+            "count": 10, 
+            "intervalSec": 60,
+            "prefix": "pressure-"
+        },
+        {
+            "name": "Humidity Sensor",
+            "count": 10, 
+            "intervalSec": 60,
+            "prefix": "humidity-"
+        }
+    ]
+}
