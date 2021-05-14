@@ -74,7 +74,7 @@ provisioningClient.register(function (err, result) {
         var sendInterval = setInterval(function () {
           var humidity = 0 + (Math.random() * 40); // range: [0, 40]
           //var data = JSON.stringify({ SensorName: "humidity", SensorValue: humidity, sentTime: new Date() });
-          var data = JSON.stringify({ SensorValue: humidity, sentTime: new Date() });
+          var data = JSON.stringify({ SensorName: argv.name, SensorValue: humidity, sentTime: new Date() });
           var message = new Message(data);
           message.properties.add('sensorType', 'humidity');
           

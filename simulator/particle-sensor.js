@@ -72,7 +72,7 @@ provisioningClient.register(function (err, result) {
         // Create a message and send it to the IoT Hub every two seconds
         var sendInterval = setInterval(function () {
           var particle = -10 + (Math.random() * 53); // range: [0, 55]
-          var data = JSON.stringify({ SensorValue: particle, sentTime: new Date() });
+          var data = JSON.stringify({ SensorName: argv.name, SensorValue: particle, sentTime: new Date() });
           var message = new Message(data);
           message.properties.add('sensorType', 'particle');
           

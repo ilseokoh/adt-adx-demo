@@ -74,7 +74,7 @@ provisioningClient.register(function (err, result) {
         var sendInterval = setInterval(function () {
           var gas = 30 + (Math.random() * 60); // range: [30, 60]
           //var data = JSON.stringify({ SensorName: "gas", SensorValue: gas, sentTime: new Date() });
-          var data = JSON.stringify({ SensorValue: gas, sentTime: new Date() });
+          var data = JSON.stringify({ SensorName: argv.name, SensorValue: gas, sentTime: new Date() });
           var message = new Message(data);
           message.properties.add('sensorType', 'gas');
           

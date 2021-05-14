@@ -73,13 +73,14 @@ provisioningClient.register(function (err, result) {
                 // Create a message and send it to the IoT Hub every two seconds
                 var sendInterval = setInterval(function () {
                   var temperature = 20 + (Math.random() * 10); // range: [20, 30]
-                  var data = JSON.stringify({ SensorValue: temperature, sentTime: new Date() });
+                  var data = JSON.stringify({ SensorName: argv.name, SensorValue: temperature, sentTime: new Date() });
 
                   var message = new Message(data);
                   message.properties.add('sensorType', 'temperature');
 
                   console.log(argv.regid + ' Sending message: ' + message.getData());
                   hubClient.sendEvent(message, printResultFor(argv.regid + ': send'));
+                  
                 }, argv.intervalsec * 1000);
 
                 hubClient.on('error', function (err) {

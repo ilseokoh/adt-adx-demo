@@ -73,7 +73,7 @@ provisioningClient.register(function (err, result) {
         // Create a message and send it to the IoT Hub every two seconds
         var sendInterval = setInterval(function () {
           var pressure = -0.5 + (Math.random() * 11); // range: [0, 11]
-          var data = JSON.stringify({ SensorValue: pressure, sentTime: new Date() });
+          var data = JSON.stringify({ SensorName: argv.name, SensorValue: pressure, sentTime: new Date() });
           var message = new Message(data);
           message.properties.add('sensorType', 'pressure');
 

@@ -12,7 +12,7 @@ namespace ADTADXDemo.Function
     public static class ADTPropChangeProcessor
     {
         [FunctionName("ADTPropChangeProcessor")]
-        public static async Task Run([EventHubTrigger("adt-prop-changed", Connection = "AzureWebJobsStorage")] EventData[] events, ILogger log)
+        public static async Task Run([EventHubTrigger("adt-sensor-prop-changed", Connection = "IoTMREventHubConnString")] EventData[] events, ILogger log)
         {
             var exceptions = new List<Exception>();
 
