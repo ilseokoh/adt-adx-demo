@@ -1,18 +1,7 @@
 {
-    "@id":"dtmi:com:iloh:demo:pressure;1",
+    "@id":"dtmi:com:iloh:demo:sensor:pressure;1",
     "@type":"Interface",
-    "displayName":"Pressure Sensor",
-    "contents":[
-        {
-            "@type":"Property",
-            "name":"SensorName",
-            "schema":"string"
-        },
-        {
-            "@type":"Property",
-            "name":"SensorValue",
-            "schema":"float"
-        }
-    ],
+    "displayName":"pressure Sensor",
+    "extends": "dtmi:com:iloh:demo:sensor;1",
     "@context":"dtmi:dtdl:context;2"
 }

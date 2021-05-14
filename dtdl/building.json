@@ -10,15 +10,8 @@
         },
         {
             "@type":"Relationship",
-            "name":"contains",
-            "displayName":"contains",
-            "properties":[
-                {
-                    "name":"Floor",
-                    "@type":"Property",
-                    "schema":"string"
-                }
-            ]
+            "name":"floor",
+            "target": "dtmi:com:iloh:demo:floor;1"
         }
     ],
     "@context":"dtmi:dtdl:context;2"

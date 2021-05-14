@@ -1,18 +1,7 @@
 {
-    "@id":"dtmi:com:iloh:demo:gas;1",
+    "@id":"dtmi:com:iloh:demo:sensor:gas;1",
     "@type":"Interface",
-    "displayName":"Gas Sensor",
-    "contents":[
-        {
-            "@type":"Property",
-            "name":"SensorName",
-            "schema":"string"
-        },
-        {
-            "@type":"Property",
-            "name":"SensorValue",
-            "schema":"float"
-        }
-    ],
+    "displayName":"gas Sensor",
+    "extends": "dtmi:com:iloh:demo:sensor;1",
     "@context":"dtmi:dtdl:context;2"
 }

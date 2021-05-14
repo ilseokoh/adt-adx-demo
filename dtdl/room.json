@@ -10,11 +10,6 @@
       },
       {
         "@type": "Property",
-        "name": "status",
-        "schema": "boolean"
-      },
-      {
-        "@type": "Property",
         "name": "dpstatus",
         "schema": "boolean"
       },
@@ -45,15 +40,8 @@
       },
       {
         "@type": "Relationship",
-        "name": "contains",
-        "displayName": "contains",
-        "properties": [
-          {
-            "name": "Sensor",
-            "@type": "Property",
-            "schema": "string"
-          }
-        ]
+        "name": "hasCapability",
+        "target": "dtmi:com:iloh:demo:sensor;1"
       }
     ],
     "@context":"dtmi:dtdl:context;2"

@@ -1,0 +1,30 @@
+{
+    "@id":"dtmi:com:iloh:demo:sensor;1",
+    "@type":"Interface",
+    "displayName":"Sensor name, value, unit",
+    "contents":[
+        {
+            "@type":"Property",
+            "name":"Name",
+            "schema":"string"
+        },
+        {
+            "@type":"Property",
+            "name":"Value",
+            "schema":"float"
+        },
+        {
+            "@type":"Property",
+            "name":"Unit",
+            "schema":"string",
+            "writable": true
+        },
+        {
+            "@type":"Property",
+            "name": "lastUpdatedTime",
+            "schema": "dateTime",
+            "writable": true
+        }
+    ],
+    "@context":"dtmi:dtdl:context;2"
+}

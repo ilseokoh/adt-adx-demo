@@ -1,18 +1,7 @@
 {
-    "@id":"dtmi:com:iloh:demo:temperature;1",
+    "@id":"dtmi:com:iloh:demo:sensor:temperature;1",
     "@type":"Interface",
     "displayName":"Temperature Sensor",
-    "contents":[
-        {
-            "@type":"Property",
-            "name":"SensorName",
-            "schema":"string"
-        },
-        {
-            "@type":"Property",
-            "name":"SensorValue",
-            "schema":"float"
-        }
-    ],
+    "extends": "dtmi:com:iloh:demo:sensor;1",
     "@context":"dtmi:dtdl:context;2"
 }

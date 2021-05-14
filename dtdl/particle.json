@@ -1,18 +1,7 @@
 {
-    "@id":"dtmi:com:iloh:demo:particle;1",
+    "@id":"dtmi:com:iloh:demo:sensor:particle;1",
     "@type":"Interface",
-    "displayName":"Particle Sensor",
-    "contents":[
-        {
-            "@type":"Property",
-            "name":"SensorName",
-            "schema":"string"
-        },
-        {
-            "@type":"Property",
-            "name":"SensorValue",
-            "schema":"float"
-        }
-    ],
+    "displayName":"particle Sensor",
+    "extends": "dtmi:com:iloh:demo:sensor;1",
     "@context":"dtmi:dtdl:context;2"
 }

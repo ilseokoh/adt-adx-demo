@@ -10,15 +10,8 @@
         },
         {
             "@type":"Relationship",
-            "name":"contains",
-            "displayName":"contains",
-            "properties":[
-                {
-                    "name":"Room",
-                    "@type":"Property",
-                    "schema":"string"
-                }
-            ]
+            "name":"isPartOf",
+            "target": "dtmi:com:iloh:demo:room;1"
         }
     ],
     "@context":"dtmi:dtdl:context;2"
