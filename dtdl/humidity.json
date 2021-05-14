@@ -1,0 +1,18 @@
+{
+    "@id":"dtmi:com:iloh:demo:humidity;1",
+    "@type":"Interface",
+    "displayName":"Humidity Sensor",
+    "contents":[
+        {
+            "@type":"Property",
+            "name":"SensorName",
+            "schema":"string"
+        },
+        {
+            "@type":"Property",
+            "name":"SensorValue",
+            "schema":"float"
+        }
+    ],
+    "@context":"dtmi:dtdl:context;2"
+}

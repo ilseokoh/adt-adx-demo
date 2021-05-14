@@ -1,0 +1,25 @@
+{
+    "@id":"dtmi:com:iloh:demo:building;1",
+    "@type":"Interface",
+    "displayName" : "Building",
+    "contents":[
+        {
+            "@type":"Property",
+            "name":"BuildingName",
+            "schema":"string"
+        },
+        {
+            "@type":"Relationship",
+            "name":"contains",
+            "displayName":"contains",
+            "properties":[
+                {
+                    "name":"Floor",
+                    "@type":"Property",
+                    "schema":"string"
+                }
+            ]
+        }
+    ],
+    "@context":"dtmi:dtdl:context;2"
+}

@@ -1,0 +1,25 @@
+{
+    "@id":"dtmi:com:iloh:demo:floor;1",
+    "@type":"Interface",
+    "displayName":"Floor",
+    "contents":[
+        {
+            "@type":"Property",
+            "name":"Floor",
+            "schema":"integer"
+        },
+        {
+            "@type":"Relationship",
+            "name":"contains",
+            "displayName":"contains",
+            "properties":[
+                {
+                    "name":"Room",
+                    "@type":"Property",
+                    "schema":"string"
+                }
+            ]
+        }
+    ],
+    "@context":"dtmi:dtdl:context;2"
+}

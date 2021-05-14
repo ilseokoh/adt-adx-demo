@@ -1,0 +1,60 @@
+{
+    "@id":"dtmi:com:iloh:demo:room;1",
+    "@type":"Interface",
+    "displayName":"Room",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "RoomName",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "status",
+        "schema": "boolean"
+      },
+      {
+        "@type": "Property",
+        "name": "dpstatus",
+        "schema": "boolean"
+      },
+      {
+        "@type": "Property",
+        "name": "ptstatus",
+        "schema": "boolean"
+      },
+      {
+        "@type": "Property",
+        "name": "ParticleMin",
+        "schema": "float"
+      },
+      {
+        "@type": "Property",
+        "name": "ParticleMax",
+        "schema": "float"
+      },
+      {
+        "@type": "Property",
+        "name": "PressureMin",
+        "schema": "float"
+      },
+      {
+        "@type": "Property",
+        "name": "PressureMax",
+        "schema": "float"
+      },
+      {
+        "@type": "Relationship",
+        "name": "contains",
+        "displayName": "contains",
+        "properties": [
+          {
+            "name": "Sensor",
+            "@type": "Property",
+            "schema": "string"
+          }
+        ]
+      }
+    ],
+    "@context":"dtmi:dtdl:context;2"
+}
