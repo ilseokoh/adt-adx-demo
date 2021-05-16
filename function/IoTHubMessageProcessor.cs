@@ -58,8 +58,8 @@ namespace ADTADXDemo.Function
                         var sensordata = JsonConvert.DeserializeObject<SensorMessage>(msg);
 
                         JsonPatchDocument updateTwinData = new JsonPatchDocument();
-                        updateTwinData.AppendReplace<string>("/SensorName", sensordata.SensorName);
-                        updateTwinData.AppendReplace<float>("/SensorValue", (float)sensordata.SensorValue);
+                        updateTwinData.AppendReplace<string>("/Name", sensordata.SensorName);
+                        updateTwinData.AppendReplace<float>("/Value", (float)sensordata.SensorValue);
 
                         await client.UpdateDigitalTwinAsync(deviceId, updateTwinData);   //deviceId == dtid 
                     }
@@ -75,8 +75,8 @@ namespace ADTADXDemo.Function
                         var sensordata = JsonConvert.DeserializeObject<SensorMessage>(msg);
 
                         JsonPatchDocument addTwinData = new JsonPatchDocument();
-                        addTwinData.AppendAdd<string>("/SensorName", sensordata.SensorName);
-                        addTwinData.AppendAdd<float>("/SensorValue", (float)sensordata.SensorValue);
+                        addTwinData.AppendAdd<string>("/Name", sensordata.SensorName);
+                        addTwinData.AppendAdd<float>("/Value", (float)sensordata.SensorValue);
 
                         await client.UpdateDigitalTwinAsync(deviceId, addTwinData);
                         
