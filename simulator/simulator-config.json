@@ -1,0 +1,150 @@
+{
+    "name": "Sensor simulator",
+    "dps": {
+        "idScope": "0ne0049FFC7",
+        "provisionUrl": "global.azure-devices-provisioning.net",
+        "groupSymmKey": "z68aOoPUaAoGaCq/a0ISvwaODaap+vUmTXBOSmdmt/k3MZdng81qtobGnltReDVU37it8zZoqitl57iaZV3ZMw=="
+    },
+    "simulators": [
+        {
+            "name": "Pressure Sensor 02",
+            "filename": "pressure-sensor",
+            "count": 4, 
+            "intervalSec": 60,
+            "prefix": "pressure_02_"
+        },
+        {
+            "name": "Pressure Sensor 03",
+            "filename": "pressure-sensor",
+            "count": 4, 
+            "intervalSec": 60,
+            "prefix": "pressure_03_"
+        },
+        {
+            "name": "Pressure Sensor 01",
+            "filename": "pressure-sensor",
+            "count": 4, 
+            "intervalSec": 60,
+            "prefix": "pressure_01_"
+        },
+        {
+            "name": "Pressure Sensor 04",
+            "filename": "pressure-sensor",
+            "count": 4, 
+            "intervalSec": 60,
+            "prefix": "pressure_04_"
+        },
+        {
+            "name": "Temperature Sensor 02",
+            "filename": "temperature-sensor",
+            "count": 1,
+            "intervalSec": 60,
+            "prefix": "temperature_02_"
+        },
+        {
+            "name": "Temperature Sensor 03",
+            "filename": "temperature-sensor",
+            "count": 1,
+            "intervalSec": 60,
+            "prefix": "temperature_03_"
+        },
+        {
+            "name": "Temperature Sensor 04",
+            "filename": "temperature-sensor",
+            "count": 1,
+            "intervalSec": 60,
+            "prefix": "temperature_04_"
+        },
+        {
+            "name": "Temperature Sensor 01",
+            "filename": "temperature-sensor",
+            "count": 1,
+            "intervalSec": 60,
+            "prefix": "temperature_01_"
+        },
+        {
+            "name": "Particle Sensor 03",
+            "filename": "particle-sensor",
+            "count": 3, 
+            "intervalSec": 60,
+            "prefix": "particle_03_"
+        },
+        {
+            "name": "Particle Sensor 04",
+            "filename": "particle-sensor",
+            "count": 3, 
+            "intervalSec": 60,
+            "prefix": "particle_04_"
+        },
+        {
+            "name": "Particle Sensor 01",
+            "filename": "particle-sensor",
+            "count": 3, 
+            "intervalSec": 60,
+            "prefix": "particle_01_"
+        },
+        {
+            "name": "Particle Sensor 02",
+            "filename": "particle-sensor",
+            "count": 3, 
+            "intervalSec": 60,
+            "prefix": "particle_02_"
+        },
+        {
+            "name": "Humidity Sensor 02",
+            "filename": "humidity-sensor",
+            "count": 1, 
+            "intervalSec": 60,
+            "prefix": "humidity_02_"
+        },
+        {
+            "name": "Humidity Sensor 03",
+            "filename": "humidity-sensor",
+            "count": 1, 
+            "intervalSec": 60,
+            "prefix": "humidity_03_"
+        },
+        {
+            "name": "Humidity Sensor 04",
+            "filename": "humidity-sensor",
+            "count": 1, 
+            "intervalSec": 60,
+            "prefix": "humidity_04_"
+        },
+        {
+            "name": "Humidity Sensor 01",
+            "filename": "humidity-sensor",
+            "count": 1, 
+            "intervalSec": 60,
+            "prefix": "humidity_01_"
+        },
+        {
+            "name": "Gas Sensor 01",
+            "filename": "gas-sensor",
+            "count": 1, 
+            "intervalSec": 60,
+            "prefix": "gas_01_"
+        },
+        {
+            "name": "Gas Sensor 04",
+            "filename": "gas-sensor",
+            "count": 1, 
+            "intervalSec": 60,
+            "prefix": "gas_04_"
+        },
+        {
+            "name": "Gas Sensor 03",
+            "filename": "gas-sensor",
+            "count": 1, 
+            "intervalSec": 60,
+            "prefix": "gas_03_"
+        },
+        {
+            "name": "Gas Sensor 02",
+            "filename": "gas-sensor",
+            "count": 1, 
+            "intervalSec": 60,
+            "prefix": "gas_02_"
+        }
+    ]
+}
